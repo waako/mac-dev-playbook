@@ -3,85 +3,97 @@ downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo: "https://github.com/waako/dotfiles.git"
+dotfiles_repo_local_destination: "~/Code/dotfiles"
 dotfiles_files:
+  - .aliases
   - .bash_profile
+  - .bash_prompt
+  - .bashrc
+  - .composer/composer.json
+  - .exports
+  - .functions
+  - .gitconfig
   - .gitconfig
   - .gitignore
-  - .inputrc
   - .osx
-  - .vimrc
+  - .wgetrc
 
 homebrew_installed_packages:
-  - ansible
-  - autoconf
-  - bash-completion
-  - boot2docker
-  - docker
-  - gettext
-  - git
-  - go
-  - gpg
+  - brew-cask
+  - drupal-code-sniffer
+  - fish
+  - get_iplayer
+  - git-extras
+  - git-flow
+  - git-sh
+  - htop
   - hub
-  - iperf
-  - libdvdcss
-  - libevent
-  - packer
-  - python
-  - sqlite
-  - mcrypt
   - mysql
-  - npm
-  - nvm
-  - php56
-  - php56-mcrypt
   - php56-xdebug
   - ssh-copy-id
-  - cowsay
-  - ios-sim
-  - readline
-  - subversion
-  - kdiff3
-  - openssl
-  - pv
-  - drush
+  - watch
   - wget
-  - wrk
-  - brew-cask
 
 homebrew_taps:
   - caskroom/cask
-  - homebrew/binary
+  - caskroom/fonts
+  - caskroom/versions
+  - dinkypumpkin/get_iplayer
   - homebrew/dupes
   - homebrew/php
+  - homebrew/services
   - homebrew/versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - adium
-  - bettertouchtool
-  - google-chrome
+  - 1password
+  - alfred
+  - betterzipql
+  - burn
+  - cakebrew
+  - cheatsheet
+  - choosy
+  - cleanmymac
+  - crashplan
+  - cyberduck
+  - daisydisk
+  - doxie
   - dropbox
-  - fing
+  - fantastical
   - firefox
-  - handbrake
-  - karabiner
-  - limechat
-  - licecap
-  - macvim
-  - menumeters
-  - nvalt
+  - fluid
+  - flux
+  - ghostlab
+  - gitx
+  - google-chrome
+  - google-chrome-beta
+  - google-chrome-canary
+  - google-drive
+  - imageoptim
+  - iterm2
+  - kaleidoscope
+  - launchrocket
+  - linkinus
+  - nylas-n1
+  - qlcolorcode
+  - qlmarkdown
+  - qlprettypatch
+  - qlstephen
+  - quicklook-csv
+  - quicklook-json
+  - rescuetime
   - sequel-pro
   - skype
-  - skitch
-  - seil
-  - sublime-text # Note - Sublime Text 2 only, at this time...
-  - textmate
-  - timemachineeditor
-  - tower
-  - transmit
+  - spectacle
+  - sublime-text3
+  - suspicious-package
+  - the-unarchiver
+  - toggldesktop
+  - trello-x
   - vagrant
-  - vagrant-manager
-  - vlc
   - virtualbox
+  - viscosity
+  - vlc
+  - webp-quicklook (!)
+  - xscope
